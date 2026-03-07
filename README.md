@@ -1,5 +1,64 @@
-# Vue 3 + Vite
+# Vue Orders Test
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Test project built with Vue 3.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Installation
+
+Install dependencies:
+
+npm install
+
+## Run frontend
+
+npm run dev
+
+The app will be available at:
+http://localhost:5173
+
+## Run websocket server
+
+node server.js
+
+or
+
+npm run socket
+
+Websocket server runs on:
+http://localhost:3001
+
+## Project structure
+
+├─ server.js – websocket server  
+├─ src  
+│  
+├─ assets  
+│   └─ vue.svg  
+│  
+├─ components  
+│   ├─ ConfirmModal.vue  
+│   ├─ Layout.vue  
+│   ├─ OrderCard.vue  
+│   ├─ OrderDetails.vue  
+│   ├─ ProductCard.vue  
+│   ├─ Sidebar.vue  
+│   └─ TopMenu.vue  
+│  
+├─ data  
+│   └─ mockData.js  
+│  
+├─ router  
+│   └─ index.js  
+│  
+├─ store  
+│   └─ index.js  
+│  
+├─ views  
+│   ├─ OrdersPage.vue  
+│   └─ ProductsPage.vue  
+│  
+├─ App.vue  
+│  
+├─ server.js
+├─ package.json  
+└─ vite.config.js
+

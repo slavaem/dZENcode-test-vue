@@ -23,11 +23,15 @@ export default createStore({
   },
 
   mutations: {
-    setOrders(state, orders) {
-      state.orders = orders
-    },
-    setProducts(state, products) {
-      state.products = products
-    }
+  setOrders(state, orders) {
+    state.orders = orders
+  },
+  setProducts(state, products) {
+    state.products = products
+  },
+  removeOrder(state, orderId) {
+    state.orders = state.orders.filter(o => o.id !== orderId)
+    state.products = state.products.filter(p => p.order !== orderId)
   }
+}
 })
