@@ -87,3 +87,9 @@ http://localhost:5173
 ├─ App.vue  
 ├─ package.json  
 └─ vite.config.js
+
+## Live Demo
+
+https://dzencodetest-git-main-vyacheslav-emecs-projects.vercel.app
+
+Note: WebSocket session counter works when server.js is running locally.
