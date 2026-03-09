@@ -37,6 +37,14 @@ WebSocket server runs on:
 
 http://localhost:3001
 
+## Run with Docker
+
+docker compose up --build
+
+After starting Docker, the application will be available at:
+
+http://localhost:5173
+
 ## Technologies
 
 - Vue 3
